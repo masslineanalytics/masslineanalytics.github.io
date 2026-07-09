@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mass Line Analytics</title>
+  <meta
+    name="description"
+    content="Mass Line Analytics empowers communities with data, research, and strategic insight."
+  />
+
+  <style>
+    :root {
+      --navy: #0b1d3d;
+      --gold: #f2b233;
+      --white: #ffffff;
+      --light-gray: #f5f7fa;
+      --slate: #5a6b84;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    header {
+      width: 100%;
+      padding: 1.25rem 5%;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      color: var(--navy);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      min-height: calc(100vh - 150px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1.5rem;
+      background:
+        radial-gradient(circle at top, #f8fbff 0%, var(--white) 58%);
+    }
+
+    .hero {
+      max-width: 850px;
+      text-align: center;
+    }
+
+    .logo {
+      width: min(500px, 90vw);
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 6vw, 4.5rem);
+      line-height: 1.05;
+      margin-bottom: 1rem;
+    }
+
+    .tagline {
+      font-size: clamp(1.15rem, 2.5vw, 1.6rem);
+      color: var(--slate);
+      margin-bottom: 1.5rem;
+    }
+
+    .description {
+      max-width: 680px;
+      margin: 0 auto 2rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #34445e;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.9rem 1.4rem;
+      border-radius: 0.5rem;
+      background: var(--navy);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: #132c58;
+    }
+
+    footer {
+      padding: 1.5rem;
+      text-align: center;
+      color: var(--slate);
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: none;
+      }
+
+      header {
+        padding: 1rem 1.25rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand-name">Mass Line Analytics</div>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="mailto:hello@masslineanalytics.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <img
+        class="logo"
+        src="assets/mass-line-analytics-logo.png"
+        alt="Mass Line Analytics logo"
+      />
+
+      <h1>Mass Line Analytics</h1>
+
+      <p class="tagline">Empowering communities with data</p>
+
+      <p class="description">
+        Community-centered research, voter analytics, and strategic insight
+        designed to help organizations understand their constituencies,
+        evaluate their work, and build lasting collective capacity.
+      </p>
+
+      <a class="button" href="mailto:hello@masslineanalytics.com">
+        Contact Us
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Mass Line Analytics LLC
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
